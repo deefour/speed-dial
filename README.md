@@ -10,7 +10,7 @@ Released under the MIT License.
 
 SpeedDial is a CLI bookmarking & shortcuts utility, allowing you to alias and index directory paths within 'entry groups', manage directory 'listings' *(SpeedDial will list out the children of a 'listing' and ask which you'd like to make your new current working directory)*, and swap your current working directory quickly by targeting entries or listings.
 
-## Installation & Usage
+## Installation
 
 ### Dependencies
 

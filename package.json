@@ -26,7 +26,6 @@
       "url": "https://github.com/deefour/SpeedDial/blob/master/LICENSE"
     }
   ],
-  "private": "false",
   "dependencies": {
     "flatiron": "0.3.0",
     "lodash": "0.9.2",
