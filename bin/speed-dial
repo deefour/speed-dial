@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+// Get things started
+require('../lib/cli').start();

@@ -1,0 +1,16 @@
+function s() {
+  sd go $*
+}
+
+function sd() {
+  node ~/Repos/Deefour/speed-dial/bin/speed-dial $*
+
+  if [ "$1" = "go" ]; then
+    file="/tmp/speed-dial"
+  
+    dir=`tail -1 $file`
+    dir=`expr "$dir" : '[[:space:]]*\(.*\)[[:space:]]*$'`
+    
+    cd "$dir"
+  fi
+}
