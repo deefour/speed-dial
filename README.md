@@ -158,7 +158,14 @@ This command obeys the following logic
 
 ## Changelog
 
-### Version 0.1.0 - November 13 2012
+### Version 0.2.0 - November 15 2012
+
+JShint now in place
+
+ - All code is now linted
+ - Initial grunt.js config added
+
+### Version 0.1.0 - November 15 2012
 
 Initial project release
 
