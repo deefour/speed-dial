@@ -151,6 +151,52 @@ This command obeys the following logic
 
 *The bash command function `s` is provided as a shortcut to `sd go`. Since SpeedDial is about minimizing keystrokes required to change a directory, it's recommended you always use `s` in favor of `sd go`.*
 
+## Options
+
+### globalLookupFallback
+
+Given a SpeedDial listing as follows
+
+```bash
+➜  ~ ✗ s
+info:
+info:    Entry Group: default (active)
+info:
+info:    1      one             /Users/deefour/Sites/One
+info:    2      two             /Users/deefour/Sites/Two
+info:    3      three           /Users/deefour/Sites/Three
+info:
+info:    Entry Group: work
+info:
+info:    4      proj            /Users/deefour/Work/Proj
+info:    5      two             /Users/deefour/Work/Two
+```
+
+If the following lookup was performed
+
+```bash
+➜  ~ ✗ s proj
+error:   The target proj does not match any alias in the default group
+```
+
+The lookup would fail. This can be annoying since the `proj` alias *does* exist, just not in the **active** group.
+
+To alleviate this frustration while still allowing for the clean organization of aliases within groups, you can set the `globalLookupFallback` config option to `true`.
+
+```bash
+➜  ~ ✗ sd config set globalLookupFallback true
+```
+
+Now the lookup will treat all aliases as though they were in a single group.
+
+```bash
+➜  ~ ✗ s proj
+info:    The /Users/deefour/Work/SchoolCMS path from the work group with scms has been selected
+info:    The current working directory is now /Users/deefour/Work/SchoolCMS
+```
+
+**Note:** The first alias matched will be used. This means in the above example if the alias `two` was searched, it will only ever match the entry in the `default` group unless the `work` group is active or specified on the command line through `s work two` *(in which case the `globalLookupFallback` is ignored anyway)*.
+
 ## Notes
 
 - Group names and listing aliases must be globally unique
