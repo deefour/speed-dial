@@ -3,14 +3,14 @@ function s() {
 }
 
 function sd() {
-  node ~/Repos/Deefour/speed-dial/bin/speed-dial $*
+  speed-dial $*
 
   if [ "$1" = "go" ]; then
     file="/tmp/speed-dial"
-  
+
     dir=`tail -1 $file`
     dir=`expr "$dir" : '[[:space:]]*\(.*\)[[:space:]]*$'`
-    
+
     cd "$dir"
   fi
 }
