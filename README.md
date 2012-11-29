@@ -191,8 +191,8 @@ Now the lookup will treat all aliases as though they were in a single group.
 
 ```bash
 ➜  ~ ✗ s proj
-info:    The /Users/deefour/Work/SchoolCMS path from the work group with scms has been selected
-info:    The current working directory is now /Users/deefour/Work/SchoolCMS
+info:    The /Users/deefour/Work/proj path from the work group with scms has been selected
+info:    The current working directory is now /Users/deefour/Work/proj
 ```
 
 **Note:** The first alias matched will be used. This means in the above example if the alias `two` was searched, it will only ever match the entry in the `default` group unless the `work` group is active or specified on the command line through `s work two` *(in which case the `globalLookupFallback` is ignored anyway)*.
