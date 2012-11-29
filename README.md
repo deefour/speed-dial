@@ -204,6 +204,10 @@ info:    The current working directory is now /Users/deefour/Work/proj
 
 ## Changelog
 
+### Version 0.3.0 - November 29 2012
+
+`globalLookupFallback` now available *(see `README.md` for details)*
+
 ### Version 0.2.0 - November 15 2012
 
 JShint now in place
