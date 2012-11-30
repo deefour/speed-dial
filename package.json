@@ -3,10 +3,10 @@
   "title": "SpeedDial",
   "description": "A CLI bookmarking & shortcuts utility",
   "version": "0.3.2",
-  "homepage": "https://github.com/deefour/SpeedDial",
+  "homepage": "https://github.com/deefour/speed-dial",
   "author": {
     "name": "Jason Daly and other contributors",
-    "url": "https://github.com/deefour/SpeedDial/blob/master/AUTHORS"
+    "url": "https://github.com/deefour/speed-dial/blob/master/AUTHORS"
   },
   "maintainers": [
     {
@@ -17,13 +17,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/deefour/SpeedDial.git"
+    "url": "git://github.com/deefour/speed-dial.git"
   },
-  "bugs": "https://github.com/deefour/SpeedDial/issues",
+  "bugs": "https://github.com/deefour/speed-dial/issues",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/deefour/SpeedDial/blob/master/LICENSE"
+      "url": "https://github.com/deefour/speed-dial/blob/master/LICENSE"
     }
   ],
   "dependencies": {
