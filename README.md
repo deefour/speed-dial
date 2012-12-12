@@ -1,6 +1,7 @@
 # SpeedDial
 
-[![Build Status](https://secure.travis-ci.org/deefour/SpeedDial.png)](http://travis-ci.org/deefour/SpeedDial)
+[![Build
+Status](https://secure.travis-ci.org/deefour/speed-dial.png)](http://travis-ci.org/deefour/speed-dial)
 
 (c) 2012 Jason Daly <jason@deefour.me> (http://deefour.me)
 
@@ -40,7 +41,8 @@ There is an inherent issue trying to change the terminal's current working direc
 
 SpeedDial works around this limitation by writing the target directory to a file in `/tmp` just before it's process exits. When calling SpeedDial through the available shell functions, the target directory is read from the `/tmp` file and the appropriate `cd [target directory]` command is executed directly within the terminal's process.
 
-**If anyone would like to suggest a better *(and multi-user-friendly)* alternative, please [create an issue](https://github.com/deefour/SpeedDial/issues/new) or send a pull request.**
+**If anyone would like to suggest a better *(and multi-user-friendly)*
+alternative, please [create an issue](https://github.com/deefour/speed-dial/issues/new) or send a pull request.**
 
 ### Available Commands
 

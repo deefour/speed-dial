@@ -4,10 +4,7 @@
   "description": "A CLI bookmarking & shortcuts utility",
   "version": "0.3.2",
   "homepage": "https://github.com/deefour/speed-dial",
-  "author": {
-    "name": "Jason Daly and other contributors",
-    "url": "https://github.com/deefour/speed-dial/blob/master/AUTHORS"
-  },
+  "author": "Jason Daly <jason@deefour.me> (http://deefour.me)",
   "maintainers": [
     {
       "name": "Jason Daly",
@@ -37,7 +34,8 @@
   },
   "devDependencies": {
     "cli-easy": "0.1.0",
-    "vows": "0.6.1"
+    "grunt-contrib-nodeunit": "~0.1.1",
+    "grunt": "~0.3.17"
   },
   "scripts": {
     "test": "vows --spec",
@@ -45,8 +43,5 @@
   },
   "bin": {
     "speed-dial": "./bin/speed-dial"
-  },
-  "name": "speed-dial",
-  "author": "Jason Daly <jason@deefour.me> (http://deefour.me)",
-  "homepage": "https://github.com/deefour/speed-dial"
+  }
 }
