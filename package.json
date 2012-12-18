@@ -1,8 +1,8 @@
 {
   "name": "speed-dial",
-  "title": "SpeedDial",
+  "title": "speed-dial",
   "description": "A CLI bookmarking & shortcuts utility",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "homepage": "https://github.com/deefour/speed-dial",
   "author": "Jason Daly <jason@deefour.me> (http://deefour.me)",
   "maintainers": [
